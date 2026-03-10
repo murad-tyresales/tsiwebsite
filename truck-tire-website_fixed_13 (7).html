@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tire Sales International | Commercial Wholesale Truck Tires</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() { emailjs.init({ publicKey: "S-5mewTBTX-4SdhSj" }); })();
+</script>
+<style>
+  :root {
+    --black: #0a0a0a;
+    --dark: #111214;
+    --steel: #1c1f24;
+    --accent: #cc2200;
+    --accent2: #991a00;
+    --white: #f4f1ec;
+    --gray: #8a8f9a;
+    --light-gray: #2a2d33;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Barlow', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 36px; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(10,10,10,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(204,34,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    height: 70px;
+  }
+
+  .logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .logo span { color: var(--accent); }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  nav ul a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  nav ul a:hover { color: var(--accent); }
+
+  .nav-cta {
+    background: var(--accent);
+    color: var(--black) !important;
+    padding: 0.5rem 1.2rem;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--black);
+    padding: 0 5%;
+    padding-top: 106px;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 70% 50%, rgba(204,34,0,0.07) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(192,57,43,0.06) 0%, transparent 60%);
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(204,34,0,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(204,34,0,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.4);
+    padding: 0.3rem 1rem;
+    margin-bottom: 2rem;
+    animation: fadeUp 0.8s ease both;
+  }
+
+  .hero h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+
+  .hero h1 em {
+    font-style: normal;
+    color: var(--accent);
+    display: block;
+  }
+
+  .hero p {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--gray);
+    line-height: 1.7;
+    max-width: 500px;
+    font-weight: 300;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+    animation: fadeUp 0.8s 0.3s ease both;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--black);
+    padding: 1rem 2.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .btn-primary:hover { background: #dd3311; transform: translateY(-2px); }
+
+  .btn-outline {
+    border: 1px solid rgba(255,255,255,0.3);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* BIG TIRE VISUAL */
+  .hero-visual {
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55vw;
+    max-width: 800px;
+    aspect-ratio: 1;
+    opacity: 0.12;
+    animation: rotateTire 30s linear infinite;
+  }
+
+  @keyframes rotateTire {
+    from { transform: translateY(-50%) rotate(0deg); }
+    to { transform: translateY(-50%) rotate(360deg); }
+  }
+
+  .tire-ring {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 40px solid var(--white);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tire-inner {
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+    border: 20px solid var(--white);
+  }
+
+  /* TICKER */
+  .ticker {
+    background: var(--accent);
+    padding: 0.7rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ticker-inner {
+    display: inline-block;
+    animation: ticker 20s linear infinite;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* STATS */
+  .stats {
+    background: var(--steel);
+    padding: 4rem 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    border-top: 1px solid var(--light-gray);
+    border-bottom: 1px solid var(--light-gray);
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-top: 0.3rem;
+  }
+
+  /* BRANDS */
+  .section {
+    padding: 6rem 5%;
+  }
+
+  .section-tag {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+
+  .section-sub {
+    color: var(--gray);
+    font-size: 1rem;
+    max-width: 500px;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+  }
+
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5px;
+    background: var(--light-gray);
+  }
+
+  .brand-card {
+    background: var(--steel);
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+
+  .brand-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+
+  .brand-card:hover { background: #222528; }
+  .brand-card:hover::before { transform: scaleX(1); }
+
+  .brand-icon {
+    width: 160px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border: 1px solid var(--light-gray);
+    padding: 10px;
+  }
+
+  .brand-name {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .brand-tag {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .brand-desc {
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* FIRESTONE */
+  .brand-firestone .brand-icon { background: rgba(192,57,43,0.15); border-color: rgba(192,57,43,0.3); }
+  .brand-firestone .brand-tag { color: #e74c3c; }
+  /* BF GOODRICH */
+  .brand-michelin .brand-icon { background: rgba(255,180,0,0.15); border-color: rgba(255,180,0,0.4); }
+  .brand-michelin .brand-tag { color: #ffb400; }
+  /* YOKOHAMA */
+  .brand-yokohama .brand-icon { background: rgba(204,34,0,0.15); border-color: rgba(204,34,0,0.3); }
+  /* FALKEN */
+  .brand-falken .brand-icon { background: rgba(52,152,219,0.1); border-color: rgba(52,152,219,0.3); }
+  .brand-falken .brand-tag { color: #3498db; }
+
+  /* PRODUCTS */
+  .products {
+    background: var(--dark);
+    padding: 6rem 5%;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .product-card {
+    background: var(--steel);
+    border: 1px solid var(--light-gray);
+    padding: 2rem;
+    position: relative;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+
+  .product-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+  }
+
+  .product-num {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: rgba(204,34,0,0.1);
+    line-height: 1;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+
+  .product-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .product-desc {
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .product-badge {
+    display: inline-block;
+    background: rgba(204,34,0,0.15);
+    border: 1px solid rgba(204,34,0,0.3);
+    color: var(--accent);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+  }
+
+  /* WHY US */
+  .why {
+    padding: 6rem 5%;
+    background: var(--black);
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .why-features {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .feature {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(204,34,0,0.1);
+    border: 1px solid rgba(204,34,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+
+  .feature-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  .feature-desc {
+    color: var(--gray);
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .why-visual {
+    background: var(--steel);
+    border: 1px solid var(--light-gray);
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .why-visual::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(204,34,0,0.05) 0%, transparent 60%);
+  }
+
+  .why-visual h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  .why-visual h3 span { color: var(--accent); display: block; }
+
+  .coverage-list {
+    list-style: none;
+    display: grid;
+    gap: 0.8rem;
+  }
+
+  .coverage-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.95rem;
+    color: var(--gray);
+  }
+
+  .coverage-list li::before {
+    content: '→';
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* CONTACT */
+  .contact {
+    background: var(--steel);
+    padding: 6rem 5%;
+    border-top: 1px solid var(--light-gray);
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .contact-form {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    background: var(--black);
+    border: 1px solid var(--light-gray);
+    color: var(--white);
+    padding: 0.9rem 1rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    border-color: var(--accent);
+  }
+
+  input::placeholder, textarea::placeholder { color: var(--gray); }
+
+  select option { background: var(--dark); }
+
+  textarea { resize: vertical; min-height: 120px; }
+
+  .contact-info {
+    display: grid;
+    gap: 2rem;
+  }
+
+  .info-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .info-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(204,34,0,0.1);
+    border: 1px solid rgba(204,34,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .info-label {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+  }
+
+  .info-value {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--black);
+    padding: 2rem 5%;
+    border-top: 1px solid var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  footer p {
+    color: var(--gray);
+    font-size: 0.85rem;
+  }
+
+  .footer-brands {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .footer-brands span {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* MOBILE */
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .hamburger span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: var(--white);
+    transition: all 0.3s;
+    border-radius: 2px;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  #mobile-menu {
+    display: none;
+    position: fixed;
+    top: 106px;
+    left: 0; right: 0;
+    background: rgba(10,10,10,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(204,34,0,0.2);
+    padding: 1.5rem 5%;
+    z-index: 99;
+    flex-direction: column;
+  }
+  #mobile-menu.open { display: flex; }
+  #mobile-menu a {
+    color: var(--gray);
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Barlow Condensed', sans-serif;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--light-gray);
+    transition: color 0.2s;
+  }
+  #mobile-menu a:last-child { border-bottom: none; }
+  #mobile-menu a:hover { color: var(--accent); }
+  #mobile-menu a.nav-cta {
+    margin-top: 1rem;
+    background: var(--accent);
+    color: var(--black) !important;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    border-bottom: none;
+  }
+
+  @media (max-width: 768px) {
+    nav ul { display: none; }
+    .hamburger { display: flex; }
+    .why-grid, .contact-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .hero-visual { display: none; }
+  }
+
+  /* ===== CHAT WIDGET ===== */
+  #tsi-chat-launcher {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background: #cc2200;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 20px rgba(204,34,0,0.5);
+    z-index: 9998;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+  }
+  #tsi-chat-launcher:hover { transform: scale(1.08); box-shadow: 0 6px 28px rgba(204,34,0,0.7); }
+  #tsi-chat-launcher svg { width: 28px; height: 28px; fill: white; transition: opacity 0.2s; }
+  #tsi-chat-launcher .icon-close { display: none; font-size: 1.4rem; color: white; line-height: 1; }
+  #tsi-chat-launcher::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #cc2200;
+    animation: pulse-ring 2s ease-out infinite;
+  }
+  @keyframes pulse-ring {
+    0% { transform: scale(1); opacity: 0.8; }
+    100% { transform: scale(1.6); opacity: 0; }
+  }
+  #tsi-chat-window {
+    position: fixed;
+    bottom: 6.5rem;
+    right: 2rem;
+    width: 370px;
+    height: 560px;
+    background: #0f1114;
+    border: 1px solid #2a2d33;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9997;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    transform: scale(0.9) translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+  }
+  #tsi-chat-window.open { transform: scale(1) translateY(0); opacity: 1; pointer-events: all; }
+  .chat-header { background: #cc2200; padding: 1rem 1.2rem; display: flex; align-items: center; gap: 0.8rem; flex-shrink: 0; }
+  .chat-header-avatar { width: 38px; height: 38px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+  .chat-header-info { flex: 1; }
+  .chat-header-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: 1px; color: white; text-transform: uppercase; }
+  .chat-header-status { font-size: 0.72rem; color: rgba(255,255,255,0.8); display: flex; align-items: center; gap: 0.3rem; margin-top: 1px; }
+  .status-dot { width: 7px; height: 7px; background: #4ade80; border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+  @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+  .chat-quick-actions { background: #1c1f24; padding: 0.6rem 1rem; display: flex; gap: 0.4rem; flex-wrap: wrap; border-bottom: 1px solid #2a2d33; flex-shrink: 0; }
+  .quick-btn { background: transparent; border: 1px solid #3a3d43; color: #aaa; font-family: 'Barlow', sans-serif; font-size: 0.72rem; padding: 0.3rem 0.7rem; border-radius: 20px; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+  .quick-btn:hover { border-color: #cc2200; color: #cc2200; background: rgba(204,34,0,0.08); }
+  .chat-messages { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: 0.8rem; scroll-behavior: smooth; }
+  .chat-messages::-webkit-scrollbar { width: 4px; }
+  .chat-messages::-webkit-scrollbar-track { background: transparent; }
+  .chat-messages::-webkit-scrollbar-thumb { background: #2a2d33; border-radius: 2px; }
+  .msg { display: flex; gap: 0.5rem; align-items: flex-end; animation: msgIn 0.3s ease; }
+  @keyframes msgIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .msg.user { flex-direction: row-reverse; }
+  .msg-avatar { width: 28px; height: 28px; border-radius: 50%; background: #cc2200; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; color: white; flex-shrink: 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; }
+  .msg.user .msg-avatar { background: #2a2d33; }
+  .msg-bubble { max-width: 78%; padding: 0.65rem 0.9rem; border-radius: 4px; font-size: 0.88rem; line-height: 1.5; }
+  .msg.bot .msg-bubble { background: #1c1f24; color: #e0ddd8; border: 1px solid #2a2d33; border-bottom-left-radius: 0; }
+  .msg.user .msg-bubble { background: #cc2200; color: white; border-bottom-right-radius: 0; }
+  .msg-time { font-size: 0.65rem; color: #555; margin-top: 3px; text-align: right; }
+  .msg.bot .msg-time { text-align: left; }
+  .typing-indicator { display: flex; gap: 4px; align-items: center; padding: 0.65rem 0.9rem; background: #1c1f24; border: 1px solid #2a2d33; border-radius: 4px; border-bottom-left-radius: 0; width: fit-content; }
+  .typing-dot { width: 7px; height: 7px; background: #555; border-radius: 50%; animation: typingBounce 1.2s ease-in-out infinite; }
+  .typing-dot:nth-child(2) { animation-delay: 0.2s; }
+  .typing-dot:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes typingBounce { 0%, 60%, 100% { transform: translateY(0); background: #555; } 30% { transform: translateY(-6px); background: #cc2200; } }
+  .suggestions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.4rem; }
+  .suggestion-chip { background: transparent; border: 1px solid rgba(204,34,0,0.5); color: #cc2200; font-family: 'Barlow', sans-serif; font-size: 0.75rem; padding: 0.3rem 0.7rem; border-radius: 20px; cursor: pointer; transition: all 0.2s; }
+  .suggestion-chip:hover { background: #cc2200; color: white; }
+  .chat-input-area { padding: 0.8rem 1rem; border-top: 1px solid #2a2d33; display: flex; gap: 0.6rem; align-items: flex-end; background: #0f1114; flex-shrink: 0; }
+  #chat-input { flex: 1; background: #1c1f24; border: 1px solid #2a2d33; color: #f4f1ec; font-family: 'Barlow', sans-serif; font-size: 0.88rem; padding: 0.65rem 0.9rem; border-radius: 4px; outline: none; resize: none; max-height: 100px; line-height: 1.4; transition: border-color 0.2s; }
+  #chat-input:focus { border-color: #cc2200; }
+  #chat-input::placeholder { color: #555; }
+  #chat-send { width: 38px; height: 38px; background: #cc2200; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background 0.2s, transform 0.1s; }
+  #chat-send:hover { background: #dd3311; }
+  #chat-send:active { transform: scale(0.95); }
+  #chat-send svg { width: 18px; height: 18px; fill: white; }
+  .chat-footer-bar { text-align: center; font-size: 0.65rem; color: #444; padding: 0.4rem; background: #0f1114; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+
+<!-- DEALER LOGIN TOP BAR -->
+<div id="dealer-topbar" style="background: var(--steel); border-bottom: 1px solid #ddd; padding: 0 5%; position:fixed; top:0; left:0; right:0; z-index:200;">
+  <div style="display:flex; align-items:center; justify-content:flex-end; gap:1rem; padding: 0.5rem 0; flex-wrap:wrap;">
+    <span style="font-family:'Barlow Condensed',sans-serif; font-size:0.9rem; letter-spacing:2px; text-transform:uppercase; color:var(--white);">Authorized Dealers</span>
+    <form action="https://tiresalesinternationaltirelinkv3.tireguru.net/login" method="post" style="display:flex; align-items:center; gap:0.8rem; flex-wrap:wrap;">
+      <input type="hidden" name="server" value="TG1" />
+      <input type="hidden" name="from" value="tiresalesinternational" />
+      <input type="text" name="username" placeholder="Username"
+        style="background:#f5f5f5; border:1px solid #ccc; color:#111; padding:0.4rem 0.8rem; font-family:'Barlow',sans-serif; font-size:0.85rem; outline:none; width:140px;"
+        onfocus="this.style.borderColor='#cc2200'" onblur="this.style.borderColor='#ccc'">
+      <input type="password" name="password" placeholder="Password"
+        style="background:#f5f5f5; border:1px solid #ccc; color:#111; padding:0.4rem 0.8rem; font-family:'Barlow',sans-serif; font-size:0.85rem; outline:none; width:140px;"
+        onfocus="this.style.borderColor='#cc2200'" onblur="this.style.borderColor='#ccc'">
+      <button type="submit" class="btn-primary" style="padding:0.4rem 1.2rem; font-size:0.75rem; cursor:pointer; white-space:nowrap;">
+        Log In →
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">TIRE SALES <span>INTERNATIONAL</span></a>
+  <ul>
+    <li><a href="#brands">Brands</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu">
+  <a href="#brands" onclick="closeMobileMenu()">Brands</a>
+  <a href="#products" onclick="closeMobileMenu()">Products</a>
+  <a href="#why" onclick="closeMobileMenu()">Why Us</a>
+  <a href="#contact" class="nav-cta" onclick="closeMobileMenu()">Get a Quote</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-visual">
+    <div class="tire-ring">
+      <div class="tire-inner"></div>
+    </div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag">Commercial Wholesale Distributor</div>
+    <h1>Your Trusted<em>Tire Source.</em></h1>
+    <p>Premium commercial truck tires at wholesale pricing for fleets, dealers, and repair shops across Houston and the Gulf Coast region. We carry the brands your trucks demand.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary">Request Wholesale Pricing</a>
+      <a href="#brands" class="btn-outline">View Brands</a>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    🔴 FIRESTONE &nbsp;★&nbsp; BF GOODRICH &nbsp;★&nbsp; YOKOHAMA &nbsp;★&nbsp; FALKEN &nbsp;★&nbsp; AVANTECH &nbsp;★&nbsp; DOUBLE COIN &nbsp;★&nbsp; XMPLAR &nbsp;★&nbsp; COMMERCIAL WHOLESALE PRICING &nbsp;★&nbsp; HOUSTON & GULF COAST &nbsp;★&nbsp; FLEET ACCOUNTS WELCOME &nbsp;★&nbsp; SAME DAY AVAILABILITY &nbsp;★&nbsp;
+    🔴 FIRESTONE &nbsp;★&nbsp; BF GOODRICH &nbsp;★&nbsp; YOKOHAMA &nbsp;★&nbsp; FALKEN &nbsp;★&nbsp; AVANTECH &nbsp;★&nbsp; DOUBLE COIN &nbsp;★&nbsp; XMPLAR &nbsp;★&nbsp; COMMERCIAL WHOLESALE PRICING &nbsp;★&nbsp; HOUSTON & GULF COAST &nbsp;★&nbsp; FLEET ACCOUNTS WELCOME &nbsp;★&nbsp; SAME DAY AVAILABILITY &nbsp;★&nbsp;
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">8</div>
+    <div class="stat-label">Tire Brands</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">500+</div>
+    <div class="stat-label">SKUs In Stock</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">24hr</div>
+    <div class="stat-label">Order Turnaround</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">20+</div>
+    <div class="stat-label">Years Serving Houston</div>
+  </div>
+</div>
+
+<!-- BRANDS -->
+<section class="section" id="brands">
+  <div class="section-tag">Premium & Imported Tire Brands</div>
+  <h2 class="section-title">The Best Names<br>In Commercial Tires</h2>
+  <p class="section-sub">We carry 8 top brands — from globally recognized premium names to high-value imported lines — trusted by fleets, owner-operators, and dealers nationwide.</p>
+
+  <div class="section-tag" style="margin-bottom:1rem; margin-top: 0;">⭐ PREMIUM BRANDS</div>
+  <div class="brands-grid">
+    <!-- FIRESTONE -->
+    <a href="https://commercial.bridgestone.com/en-us/firestone" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+    <div class="brand-card brand-firestone">
+      <div class="brand-icon" style="background:rgba(192,57,43,0.1);border-color:rgba(192,57,43,0.3);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Firestone.svg" alt="Firestone" style="max-width:130px;max-height:55px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'font-family:serif;font-size:1.4rem;color:#c0392b;font-weight:bold;\'>Firestone</span>';">
+      </div>
+      <div class="brand-name">Firestone</div>
+      <div class="brand-tag">Industry Standard Since 1900</div>
+      <p class="brand-desc">Engineered for long haul durability and consistent performance across all road conditions. Firestone's commercial line sets the benchmark for reliability and tread life across Class 6–8 trucks.</p>
+      <div style="margin-top:1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);">Visit Site →</div>
+    </div>
+    </a>
+
+    <!-- BF GOODRICH -->
+    <a href="https://business.bfgoodrichtires.com/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+    <div class="brand-card brand-michelin">
+      <div class="brand-icon" style="background:rgba(255,180,0,0.1);border-color:rgba(255,180,0,0.4);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/BFGoodrich_logo.svg" alt="BF Goodrich" style="max-width:130px;max-height:55px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'font-family:sans-serif;font-size:1.2rem;color:#ffb400;font-weight:bold;\'>BFGoodrich</span>';">
+      </div>
+      <div class="brand-name">BF Goodrich</div>
+      <div class="brand-tag">Tough. Tested. Trusted.</div>
+      <p class="brand-desc">Built for the demands of commercial trucking, BFGoodrich delivers durable, high-performance tires engineered for all-terrain toughness and long haul reliability — a proven choice for serious fleets.</p>
+      <div style="margin-top:1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);">Visit Site →</div>
+    </div>
+    </a>
+
+    <!-- YOKOHAMA -->
+    <a href="https://www.yokohamatruck.com/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+    <div class="brand-card brand-yokohama">
+      <div class="brand-icon" style="background:#1a1a1a;border-color:rgba(204,34,0,0.5);padding:0;overflow:hidden;">
+        <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" width="160" height="80">
+          <rect width="160" height="80" fill="#1a1a1a"/>
+          <!-- Y symbol -->
+          <text x="18" y="52" font-family="Arial Black, sans-serif" font-size="38" font-weight="900" fill="#cc2200">Y</text>
+          <!-- Wordmark -->
+          <text x="48" y="40" font-family="Arial Black, Arial, sans-serif" font-size="11.5" font-weight="900" fill="white" letter-spacing="1.5">YOKOHAMA</text>
+          <text x="49" y="56" font-family="Arial, sans-serif" font-size="7.5" font-weight="600" fill="#cc2200" letter-spacing="3">TRUCK TIRES</text>
+        </svg>
+      </div>
+      <div class="brand-name">Yokohama</div>
+      <div class="brand-tag">Japanese Engineering Excellence</div>
+      <p class="brand-desc">Precision-engineered for performance and value. Yokohama's commercial truck tires deliver exceptional load capacity, low rolling resistance, and long tread life — ideal for regional and urban fleets.</p>
+      <div style="margin-top:1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);">Visit Site →</div>
+    </div>
+    </a>
+
+    <!-- FALKEN -->
+    <a href="https://commercial.falkentire.com/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+    <div class="brand-card brand-falken">
+      <div class="brand-icon" style="background:#ffffff;border-color:rgba(52,152,219,0.3);">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Falken_Tire_logo.svg" alt="Falken" style="max-width:130px;max-height:55px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'font-family:sans-serif;font-size:1.2rem;color:#1a4fa0;font-weight:bold;\'>FALKEN</span>';">
+      </div>
+      <div class="brand-name">Falken</div>
+      <div class="brand-tag">Performance-Driven Value</div>
+      <p class="brand-desc">Where performance meets affordability. Falken commercial tires offer aggressive tread designs for demanding conditions, making them a top choice for vocational, construction, and mixed-service fleets.</p>
+      <div style="margin-top:1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);">Visit Site →</div>
+    </div>
+    </a>
+  </div>
+
+  <div class="section-tag" style="margin-top: 3rem; margin-bottom: 1rem;">🌐 IMPORTED BRANDS — HIGH-VALUE ALTERNATIVES</div>
+  <div class="brands-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+
+    <!-- AVANTEC -->
+    <a href="https://confiatires.com/avantech-brand" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+    <div class="brand-card brand-avantec">
+      <div class="brand-icon" style="width:160px;height:80px;border-radius:8px;background:#000;border-color:rgba(46,204,113,0.35);display:flex;align-items:center;justify-content:center;">
+        <img src="https://avantechtires.com/wp-content/uploads/2023/03/Logo-Avantech.svg" alt="Avantech" style="max-width:140px;max-height:60px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'font-family:sans-serif;font-size:1.2rem;color:#2ecc71;font-weight:bold;\'>AVANTECH</span>';">
+      </div>
+      <div class="brand-name">Avantech</div>
+      <div class="brand-tag" style="color:#2ecc71;">Smart Value · Proven Performance</div>
+      <p class="brand-desc">An emerging import brand delivering reliable performance for regional and urban fleets. Avantech offers competitive load ratings and consistent tread wear at a price point that makes fleet management easier.</p>
+      <div style="margin-top:1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);">Visit Site →</div>
+    </div>
+    </a>
+
+    <!-- DOUBLE COIN -->
+    <a href="https://www.doublecointires.com/" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+    <div class="brand-card brand-doublecoin">
+      <div class="brand-icon" style="width:160px;height:80px;border-radius:8px;background:rgba(241,196,15,0.1);border-color:rgba(241,196,15,0.35);">
+        <img src="https://www.doublecointires.com/wp-content/uploads/logo-dc@2x.png" alt="Double Coin" style="max-width:140px;max-height:65px;object-fit:contain;" onerror="this.style.display='none';this.parentNode.innerHTML='<span style=\'font-family:sans-serif;font-size:1.1rem;color:#f1c40f;font-weight:bold;\'>DOUBLE COIN</span>';">
+      </div>
+      <div class="brand-name">Double Coin</div>
+      <div class="brand-tag" style="color:#f1c40f;">China's #1 Commercial Tire Export</div>
+      <p class="brand-desc">One of the world's largest commercial tire manufacturers. Double Coin is respected globally for robust construction, excellent load capacity, and exceptional cost-per-mile value across steer, drive, and trailer positions.</p>
+      <div style="margin-top:1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);">Visit Site →</div>
+    </div>
+    </a>
+
+    <!-- XMPLAR -->
+    <a href="https://confiatires.com/xmplar-brand" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;">
+    <div class="brand-card brand-xmplar">
+      <div class="brand-icon" style="width:160px;height:80px;border-radius:8px;background:#2b2b2b;border-color:rgba(52,152,219,0.3);padding:0;overflow:hidden;">
+        <svg viewBox="0 0 160 80" xmlns="http://www.w3.org/2000/svg" width="160" height="80">
+          <rect width="160" height="80" fill="#2b2b2b"/>
+          <text x="8" y="52" font-family="Arial Black, sans-serif" font-size="32" font-weight="900" fill="#e8430a" letter-spacing="-1">X</text>
+          <text x="36" y="52" font-family="Arial Black, sans-serif" font-size="24" font-weight="900" fill="#4caf50" letter-spacing="1">MPLAR</text>
+        </svg>
+      </div>
+      <div class="brand-name">Xmplar</div>
+      <div class="brand-tag" style="color:#3498db;">Budget-Smart · Fleet-Tested</div>
+      <p class="brand-desc">Xmplar commercial truck tires offer solid performance for operators who need dependable, budget-conscious options. Ideal for local routes and light-duty commercial applications without sacrificing safety or reliability.</p>
+      <div style="margin-top:1rem;font-family:'Barlow Condensed',sans-serif;font-size:0.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--accent);">Visit Site →</div>
+    </div>
+    </a>
+
+
+
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="section-tag">Product Categories</div>
+  <h2 class="section-title">Every Application.<br>Every Size.</h2>
+  <p class="section-sub">From coast-to-coast long haul to last-mile delivery, we have the right tire for every truck type and use case.</p>
+
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-num">01</div>
+      <div class="product-title">Steer Tires</div>
+      <p class="product-desc">Precision steering control and stability for front axle positions. Engineered for even wear and driver confidence on all road types.</p>
+      <span class="product-badge">All Brands Available</span>
+    </div>
+    <div class="product-card">
+      <div class="product-num">02</div>
+      <div class="product-title">Drive Tires</div>
+      <p class="product-desc">Maximum traction and durability for powered rear axles. Deep lug patterns for torque transfer and long mileage under heavy loads.</p>
+      <span class="product-badge">All Brands Available</span>
+    </div>
+    <div class="product-card">
+      <div class="product-num">03</div>
+      <div class="product-title">Trailer Tires</div>
+      <p class="product-desc">Optimized for free-rolling performance and even wear across trailer axles. Designed for maximum load ratings and long-distance stability.</p>
+      <span class="product-badge">All Brands Available</span>
+    </div>
+    <div class="product-card">
+      <div class="product-num">04</div>
+      <div class="product-title">Wide-Base Singles</div>
+      <p class="product-desc">Replace dual assemblies with a single wide-base tire for reduced weight, better fuel economy, and simplified maintenance.</p>
+      <span class="product-badge">BF Goodrich · Yokohama</span>
+    </div>
+    <div class="product-card">
+      <div class="product-num">05</div>
+      <div class="product-title">Vocational / Off-Road</div>
+      <p class="product-desc">Built tough for construction, mining, and mixed-surface applications. Reinforced sidewalls and aggressive tread for the harshest job sites.</p>
+      <span class="product-badge">Firestone · Falken</span>
+    </div>
+    <div class="product-card">
+      <div class="product-num">06</div>
+      <div class="product-title">Retread Compatible</div>
+      <p class="product-desc">Select casings designed to be retreaded for extended service life. Maximize your cost-per-mile with our retread-eligible tire selection.</p>
+      <span class="product-badge">BF Goodrich · Firestone</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="why-grid">
+    <div>
+      <div class="section-tag">Why TSI</div>
+      <h2 class="section-title">Your Wholesale<br>Advantage</h2>
+      <p class="section-sub">We make it simple to keep your fleet rolling. Competitive pricing, deep inventory, and real service from people who know commercial tires.</p>
+
+      <div class="why-features">
+        <div class="feature">
+          <div class="feature-icon">💲</div>
+          <div>
+            <div class="feature-title">Wholesale Pricing</div>
+            <p class="feature-desc">Tiered pricing for fleets, dealers, and independents. Volume discounts and fleet account programs available.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">📦</div>
+          <div>
+            <div class="feature-title">Deep Inventory</div>
+            <p class="feature-desc">500+ SKUs in stock across all four brands. Same-day and next-day fulfillment for most sizes.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🚚</div>
+          <div>
+            <div class="feature-title">Fleet Delivery</div>
+            <p class="feature-desc">Direct-to-fleet and dealer delivery across the Houston metro and Gulf Coast corridor.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">🤝</div>
+          <div>
+            <div class="feature-title">Expert Support</div>
+            <p class="feature-desc">Our team has decades of commercial tire experience. We help you spec the right tire for every application.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-visual">
+      <h3>Houston &<span>Gulf Coast</span>Coverage</h3>
+      <ul class="coverage-list">
+        <li>Houston Metro (All Areas)</li>
+        <li>Katy / Cypress / Tomball</li>
+        <li>Pasadena / Baytown / La Marque</li>
+        <li>Sugar Land / Missouri City</li>
+        <li>The Woodlands / Conroe / Huntsville</li>
+        <li>Beaumont / Port Arthur / Orange</li>
+        <li>Galveston / Texas City / Freeport</li>
+        <li>Victoria / Corpus Christi (select orders)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-tag">Get Started Today</div>
+  <h2 class="section-title" style="margin-bottom: 3rem;">Request Wholesale<br>Pricing</h2>
+
+  <div class="contact-grid">
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-row">
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+      </div>
+      <div class="form-row">
+        <input type="text" placeholder="Company Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+      </div>
+      <input type="email" placeholder="Email Address" required>
+      <select>
+        <option value="" disabled selected>Account Type</option>
+        <option>Fleet Owner / Manager</option>
+        <option>Tire Dealer / Distributor</option>
+        <option>Repair Shop / Service Center</option>
+        <option>Owner-Operator</option>
+        <option>Other</option>
+      </select>
+      <select>
+        <option value="" disabled selected>Brand(s) of Interest</option>
+        <optgroup label="Premium Brands">
+          <option>Firestone</option>
+          <option>BF Goodrich</option>
+          <option>Yokohama</option>
+          <option>Falken</option>
+        </optgroup>
+        <optgroup label="Imported Brands">
+          <option>Avantech</option>
+          <option>Double Coin</option>
+          <option>Xmplar</option>
+
+        </optgroup>
+        <option>Multiple Brands</option>
+        <option>Not Sure Yet</option>
+      </select>
+      <textarea placeholder="Tell us about your fleet size, tire needs, or any specific sizes you're looking for..."></textarea>
+      <button type="submit" class="btn-primary" style="width:100%; font-size:1rem; cursor:pointer;">Submit Quote Request →</button>
+    </form>
+
+    <div class="contact-info">
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <div class="info-label">Headquarters</div>
+          <div class="info-value">Houston, Texas<br>Serving All Surrounding Areas</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📞</div>
+        <div>
+          <div class="info-label">Sales Line</div>
+          <div class="info-value">(713) 675-3800<br>Mon–Fri 8am–5pm · Sat 8am–12pm</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">✉️</div>
+        <div>
+          <div class="info-label">Email</div>
+          <div class="info-value"><a href="mailto:salesinfo@tyresales.biz" style="color:inherit;">salesinfo@tyresales.biz</a></div>
+        </div>
+      </div>
+
+
+      <div style="background: var(--black); border: 1px solid var(--light-gray); padding: 1.5rem; margin-top: 1rem;">
+        <div class="info-label" style="margin-bottom: 0.8rem;">Authorized Wholesale Distributor</div>
+        <div style="margin-bottom: 0.8rem;">
+          <div style="font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; color: var(--accent); margin-bottom:0.5rem;">Premium</div>
+          <div style="display:flex; gap: 1.2rem; flex-wrap: wrap;">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:1px; font-size:1rem;">FIRESTONE</span>
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:1px; font-size:1rem; color: #ffb400;">BF GOODRICH</span>
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:1px; font-size:1rem; color: var(--accent);">YOKOHAMA</span>
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:1px; font-size:1rem; color: #2ecc71;">FALKEN</span>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; color: var(--gray); margin-bottom:0.5rem;">Imported</div>
+          <div style="display:flex; gap: 1.2rem; flex-wrap: wrap;">
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:1px; font-size:1rem; color:#a574d6;">AVANTECH</span>
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:1px; font-size:1rem; color:#e74c3c;">DOUBLE COIN</span>
+            <span style="font-family:'Barlow Condensed',sans-serif; font-weight:700; letter-spacing:1px; font-size:1rem; color:#3498db;">XMPLAR</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Tire Sales International · Commercial Wholesale Truck Tires · Houston, TX</p>
+  <div class="footer-brands">
+    <span>Firestone</span>
+    <span>BF Goodrich</span>
+    <span>Yokohama</span>
+    <span>Falken</span>
+    <span>Avantech</span>
+    <span>Double Coin</span>
+    <span>Xmplar</span>
+  </div>
+</footer>
+
+<!-- ADMIN TRIGGER (fixed bottom-left) -->
+<span id="admin-trigger" onclick="openAdminPrompt()" style="position:fixed;bottom:1.2rem;left:1.2rem;font-size:0.7rem;color:rgba(255,255,255,0.2);cursor:pointer;user-select:none;letter-spacing:2px;text-transform:uppercase;font-family:'Barlow Condensed',sans-serif;z-index:10000;transition:color 0.3s;" onmouseover="this.style.color='rgba(255,255,255,0.8)'" onmouseout="this.style.color='rgba(255,255,255,0.2)'">Admin</span>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    var form = e.target;
+    var btn = form.querySelector('button[type="submit"]');
+
+    var firstName = form.querySelector('input[placeholder="First Name"]').value;
+    var lastName = form.querySelector('input[placeholder="Last Name"]').value;
+    var company = form.querySelector('input[placeholder="Company Name"]').value;
+    var phone = form.querySelector('input[placeholder="Phone Number"]').value;
+    var email = form.querySelector('input[type="email"]').value;
+    var accountType = form.querySelectorAll('select')[0].value || 'Not specified';
+    var brand = form.querySelectorAll('select')[1].value || 'Not specified';
+    var message = form.querySelector('textarea').value;
+
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+    btn.style.background = '#888';
+
+    var templateParams = {
+      from_name: firstName + ' ' + lastName,
+      company: company,
+      phone: phone,
+      reply_to: email,
+      account_type: accountType,
+      brand: brand,
+      message: message,
+      to_email: 'murad@tyresales.biz'
+    };
+
+    emailjs.send('service_t7841gh', 'template_9w0x1oq', templateParams)
+      .then(function() {
+        btn.textContent = '\u2713 Quote Request Sent!';
+        btn.style.background = '#2ecc71';
+        btn.style.color = '#fff';
+        btn.disabled = false;
+        form.reset();
+        setTimeout(function() {
+          btn.textContent = 'Submit Quote Request \u2192';
+          btn.style.background = '';
+          btn.style.color = '';
+        }, 4000);
+      }, function(error) {
+        btn.textContent = '\u2717 Failed \u2014 Try Again';
+        btn.style.background = '#e74c3c';
+        btn.disabled = false;
+        console.error('EmailJS error:', error);
+        setTimeout(function() {
+          btn.textContent = 'Submit Quote Request \u2192';
+          btn.style.background = '';
+        }, 3000);
+      });
+  }
+
+  // Animate stats on scroll
+  var stats = document.querySelectorAll('.stat-num');
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.3 });
+
+  stats.forEach(function(s) {
+    s.style.opacity = '0';
+    s.style.transform = 'translateY(20px)';
+    s.style.transition = 'opacity 0.6s, transform 0.6s';
+    observer.observe(s);
+  });
+
+  function toggleMobileMenu() {
+    var btn = document.getElementById('hamburger-btn');
+    var menu = document.getElementById('mobile-menu');
+    btn.classList.toggle('open');
+    menu.classList.toggle('open');
+  }
+  function closeMobileMenu() {
+    document.getElementById('hamburger-btn').classList.remove('open');
+    document.getElementById('mobile-menu').classList.remove('open');
+  }
+</script>
+<!-- CHAT LAUNCHER BUTTON -->
+<button id="tsi-chat-launcher" onclick="toggleChat()" title="Chat with TSI">
+  <svg id="icon-chat" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/>
+  </svg>
+  <span class="icon-close">✕</span>
+</button>
+
+<!-- CHAT WINDOW -->
+<div id="tsi-chat-window">
+  <div class="chat-header">
+    <div class="chat-header-avatar">🚛</div>
+    <div class="chat-header-info">
+      <div class="chat-header-name">TSI Assistant</div>
+      <div class="chat-header-status">
+        <div class="status-dot"></div>
+        Tire Sales International · Online
+      </div>
+    </div>
+  </div>
+  <div class="chat-quick-actions">
+    <button class="quick-btn" onclick="quickMessage('Request a quote')">💰 Get a Quote</button>
+    <button class="quick-btn" onclick="quickMessage('Check tire brands')">🔍 Brands</button>
+    <button class="quick-btn" onclick="quickMessage('Dealer account inquiry')">🤝 Dealer Account</button>
+    <button class="quick-btn" onclick="quickMessage('Talk to a sales rep')">📞 Sales Rep</button>
+  </div>
+  <div class="chat-messages" id="chat-messages"></div>
+  <div class="chat-input-area">
+    <textarea id="chat-input" placeholder="Type your message..." rows="1"
+      onkeydown="handleChatKey(event)" oninput="autoChatResize(this)"></textarea>
+    <button id="chat-send" onclick="sendMessage()">
+      <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+    </button>
+  </div>
+  <div class="chat-footer-bar">TIRE SALES INTERNATIONAL · (713) 675-3800</div>
+</div>
+
+<script>
+  var chatOpen = false;
+  var isTyping = false;
+  var SYSTEM_PROMPT = "You are TSI Assistant, a helpful and knowledgeable sales bot for Tire Sales International, a commercial wholesale truck tire distributor based in Houston, Texas. You help customers with: 1) Requesting quotes for commercial truck tires, 2) Checking available tire brands (Premium: Firestone, BF Goodrich, Yokohama, Falken | Imported: Avantec, Double Coin, Xmplar), 3) Dealer account inquiries and setup, 4) Connecting customers with a sales rep at (713) 675-3800. You cover Houston, Katy, Pasadena, Baytown, Sugar Land, The Woodlands, Beaumont, Galveston and surrounding areas. Keep responses concise, professional, and helpful. When collecting quote info, ask for: tire size, brand preference, quantity, and contact info. Always end with a helpful follow-up offer.";
+  var conversationHistory = [];
+
+  function toggleChat() {
+    chatOpen = !chatOpen;
+    var win = document.getElementById('tsi-chat-window');
+    var iconChat = document.getElementById('icon-chat');
+    var iconClose = document.querySelector('#tsi-chat-launcher .icon-close');
+    if (chatOpen) {
+      win.classList.add('open');
+      iconChat.style.display = 'none';
+      iconClose.style.display = 'block';
+      if (document.getElementById('chat-messages').children.length === 0) {
+        setTimeout(function() { sendBotMessage(null); }, 400);
+      }
+      setTimeout(function() { document.getElementById('chat-input').focus(); }, 300);
+    } else {
+      win.classList.remove('open');
+      iconChat.style.display = 'block';
+      iconClose.style.display = 'none';
+    }
+  }
+
+  function autoChatResize(el) {
+    el.style.height = 'auto';
+    el.style.height = Math.min(el.scrollHeight, 100) + 'px';
+  }
+
+  function handleChatKey(e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+  }
+
+  function quickMessage(text) {
+    document.getElementById('chat-input').value = text;
+    sendMessage();
+  }
+
+  function getChatTime() {
+    return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  }
+
+  function appendMessage(role, text) {
+    var container = document.getElementById('chat-messages');
+    var isBot = role === 'bot';
+    var msgDiv = document.createElement('div');
+    msgDiv.className = 'msg ' + role;
+    var avatar = document.createElement('div');
+    avatar.className = 'msg-avatar';
+    avatar.textContent = isBot ? '🚛' : 'YOU';
+    var bubble = document.createElement('div');
+    bubble.className = 'msg-bubble';
+    bubble.innerHTML = text.replace(/\n/g, '<br>');
+    var timeDiv = document.createElement('div');
+    timeDiv.className = 'msg-time';
+    timeDiv.textContent = getChatTime();
+    var inner = document.createElement('div');
+    inner.style.maxWidth = '78%';
+    inner.appendChild(bubble);
+    inner.appendChild(timeDiv);
+    if (isBot) { msgDiv.appendChild(avatar); msgDiv.appendChild(inner); }
+    else { msgDiv.appendChild(inner); msgDiv.appendChild(avatar); }
+    container.appendChild(msgDiv);
+    container.scrollTop = container.scrollHeight;
+  }
+
+  function appendSuggestions(chips) {
+    var container = document.getElementById('chat-messages');
+    var lastMsg = container.lastElementChild;
+    if (!lastMsg) return;
+    var bubble = lastMsg.querySelector('.msg-bubble');
+    if (!bubble) return;
+    var sugDiv = document.createElement('div');
+    sugDiv.className = 'suggestions';
+    chips.forEach(function(chip) {
+      var btn = document.createElement('button');
+      btn.className = 'suggestion-chip';
+      btn.textContent = chip;
+      btn.onclick = function() { quickMessage(chip); sugDiv.remove(); };
+      sugDiv.appendChild(btn);
+    });
+    bubble.appendChild(sugDiv);
+    container.scrollTop = container.scrollHeight;
+  }
+
+  function showTyping() {
+    var container = document.getElementById('chat-messages');
+    var typingDiv = document.createElement('div');
+    typingDiv.className = 'msg bot';
+    typingDiv.id = 'typing-indicator';
+    var avatar = document.createElement('div');
+    avatar.className = 'msg-avatar';
+    avatar.textContent = '🚛';
+    var indicator = document.createElement('div');
+    indicator.className = 'typing-indicator';
+    for (var i = 0; i < 3; i++) {
+      var dot = document.createElement('div');
+      dot.className = 'typing-dot';
+      indicator.appendChild(dot);
+    }
+    typingDiv.appendChild(avatar);
+    typingDiv.appendChild(indicator);
+    container.appendChild(typingDiv);
+    container.scrollTop = container.scrollHeight;
+  }
+
+  function hideTyping() {
+    var el = document.getElementById('typing-indicator');
+    if (el) el.remove();
+  }
+
+  async function sendBotMessage(userMessage) {
+    if (isTyping) return;
+    isTyping = true;
+    showTyping();
+    if (userMessage) conversationHistory.push({ role: 'user', content: userMessage });
+    var messages = conversationHistory.length === 0
+      ? [{ role: 'user', content: 'Greet me and introduce yourself briefly, then ask how you can help with truck tires today. Offer 4 quick options: get a quote, check brands, dealer account, or talk to a rep.' }]
+      : conversationHistory;
+    try {
+      var response = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'anthropic-version': '2023-06-01', 'anthropic-dangerous-direct-browser-access': 'true' },
+        body: JSON.stringify({ model: 'claude-sonnet-4-20250514', max_tokens: 1000, system: SYSTEM_PROMPT, messages: messages })
+      });
+      var data = await response.json();
+      var botReply = data.content && data.content[0] ? data.content[0].text : "Sorry, I'm having trouble connecting. Please call us at (713) 675-3800.";
+      hideTyping();
+      appendMessage('bot', botReply);
+      conversationHistory.push({ role: 'assistant', content: botReply });
+      var lower = (userMessage || '').toLowerCase();
+      if (!userMessage || lower.includes('hello') || lower.includes('hi') || lower.includes('help')) {
+        appendSuggestions(['Get a quote', 'Check tire brands', 'Dealer account', 'Call sales rep']);
+      } else if (lower.includes('brand') || lower.includes('tire')) {
+        appendSuggestions(['BF Goodrich truck tires', 'Firestone pricing', 'Double Coin availability', 'Get a quote']);
+      } else if (lower.includes('quote') || lower.includes('price') || lower.includes('pricing')) {
+        appendSuggestions(['295/75R22.5 steer tires', 'Drive axle tires', 'Trailer tires', 'Talk to a rep']);
+      } else if (lower.includes('dealer') || lower.includes('account')) {
+        appendSuggestions(['How to apply', 'Call (713) 675-3800', 'Email sales team']);
+      }
+    } catch (err) {
+      hideTyping();
+      appendMessage('bot', "I'm having trouble connecting right now. Please call us directly at (713) 675-3800 and our team will be happy to help!");
+    }
+    isTyping = false;
+  }
+
+  function sendMessage() {
+    var input = document.getElementById('chat-input');
+    var text = input.value.trim();
+    if (!text || isTyping) return;
+    appendMessage('user', text);
+    input.value = '';
+    input.style.height = 'auto';
+    sendBotMessage(text);
+  }
+</script>
+
+<!-- ADMIN PANEL OVERLAY -->
+<style>
+  #admin-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 9999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+  }
+  #admin-overlay.show { display: flex; }
+
+  #admin-login-box {
+    background: var(--steel);
+    border: 1px solid rgba(204,34,0,0.4);
+    padding: 2.5rem;
+    width: 340px;
+    text-align: center;
+    animation: fadeUp 0.3s ease;
+  }
+
+  #admin-panel {
+    position: fixed;
+    inset: 0;
+    background: var(--black);
+    z-index: 9998;
+    display: none;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  #admin-panel.show { display: flex; }
+
+  .admin-topbar {
+    background: #0a0a0a;
+    border-bottom: 1px solid rgba(204,34,0,0.3);
+    padding: 0 5%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .admin-logo {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: var(--white);
+  }
+  .admin-logo span { color: var(--accent); }
+
+  .admin-close-btn {
+    background: transparent;
+    border: 1px solid var(--light-gray);
+    color: var(--gray);
+    padding: 0.4rem 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .admin-close-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  .admin-body { padding: 2.5rem 5%; flex: 1; }
+
+  .admin-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 0.3rem;
+  }
+  .admin-title span { color: var(--accent); }
+
+  .admin-sub { color: var(--gray); font-size: 0.95rem; margin-bottom: 2.5rem; }
+
+  .bot-stats-bar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    background: var(--light-gray);
+    margin-bottom: 2rem;
+  }
+  .bot-stat-item { background: var(--steel); padding: 1rem 1.5rem; text-align: center; }
+  .bot-stat-num { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 2rem; color: var(--accent); line-height: 1; }
+  .bot-stat-lbl { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gray); margin-top: 0.2rem; }
+
+  .bot-controls {
+    background: var(--steel);
+    border: 1px solid var(--light-gray);
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 1.2rem;
+    align-items: end;
+  }
+
+  .bot-control-group label {
+    display: block;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+
+  .bot-plat-btns { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+  .bot-plat-btn {
+    padding: 0.45rem 0.9rem;
+    border: 1px solid var(--light-gray);
+    background: transparent;
+    color: var(--gray);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 2px;
+  }
+  .bot-plat-btn.active-fb { border-color: #1877f2; color: #1877f2; background: rgba(24,119,242,0.1); }
+  .bot-plat-btn.active-ig { border-color: #e1306c; color: #e1306c; background: rgba(225,48,108,0.1); }
+  .bot-plat-btn.active-li { border-color: #0a66c2; color: #0a66c2; background: rgba(10,102,194,0.1); }
+  .bot-plat-btn.active-gb { border-color: #34a853; color: #34a853; background: rgba(52,168,83,0.1); }
+
+  .bot-select {
+    width: 100%;
+    background: var(--black);
+    border: 1px solid var(--light-gray);
+    color: var(--white);
+    padding: 0.7rem 1rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    appearance: none;
+  }
+  .bot-select:focus { border-color: var(--accent); }
+  .bot-select option { background: var(--dark); }
+
+  .bot-gen-btn {
+    background: var(--accent);
+    color: var(--black);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .bot-gen-btn:hover { background: #dd3311; }
+  .bot-gen-btn:disabled { background: #555; cursor: not-allowed; color: #999; }
+
+  .bot-week-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+  }
+  .bot-week-label { font-family: 'Barlow Condensed', sans-serif; font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); }
+  .bot-week-nav { display: flex; align-items: center; gap: 1rem; }
+  .bot-week-nav button { background: transparent; border: 1px solid var(--light-gray); color: var(--gray); width: 32px; height: 32px; cursor: pointer; font-size: 1rem; display: flex; align-items: center; justify-content: center; transition: all 0.2s; }
+  .bot-week-nav button:hover { border-color: var(--accent); color: var(--accent); }
+  .bot-week-nav span { font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; color: var(--white); min-width: 160px; text-align: center; }
+
+  .bot-posts-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.5rem; }
+
+  .bot-post-card {
+    background: var(--steel);
+    border: 1px solid var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s;
+    animation: fadeUp 0.4s ease both;
+  }
+  .bot-post-card:hover { border-color: rgba(204,34,0,0.4); }
+
+  .bot-card-header { padding: 0.9rem 1.2rem; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--light-gray); }
+  .bot-platform { display: flex; align-items: center; gap: 0.5rem; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; }
+  .bot-plat-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .bot-type-badge { font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 2px; }
+  .bot-badge-promo { background: rgba(204,34,0,0.15); color: var(--accent); border: 1px solid rgba(204,34,0,0.3); }
+  .bot-badge-tip { background: rgba(46,204,113,0.1); color: #2ecc71; border: 1px solid rgba(46,204,113,0.3); }
+  .bot-badge-brand { background: rgba(52,152,219,0.1); color: #3498db; border: 1px solid rgba(52,152,219,0.3); }
+
+  .bot-post-body { padding: 1.2rem; flex: 1; }
+  .bot-post-text { font-size: 0.9rem; line-height: 1.65; color: var(--white); white-space: pre-wrap; min-height: 80px; }
+  .bot-post-hashtags { margin-top: 0.8rem; font-size: 0.82rem; color: #5da8e0; line-height: 1.6; }
+
+  .bot-post-footer { padding: 0.8rem 1.2rem; border-top: 1px solid var(--light-gray); display: flex; gap: 0.5rem; align-items: center; }
+
+  .bot-action-btn { flex: 1; background: transparent; border: 1px solid var(--light-gray); color: var(--gray); padding: 0.45rem 0.5rem; font-family: 'Barlow', sans-serif; font-size: 0.75rem; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; justify-content: center; gap: 0.3rem; }
+  .bot-action-btn:hover { border-color: var(--accent); color: var(--white); background: rgba(204,34,0,0.1); }
+  .bot-action-btn.copied { border-color: #2ecc71; color: #2ecc71; background: rgba(46,204,113,0.1); }
+
+  .bot-regen-btn { background: transparent; border: 1px solid var(--light-gray); color: var(--gray); width: 34px; height: 34px; cursor: pointer; font-size: 0.9rem; transition: all 0.2s; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .bot-regen-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  .bot-skeleton { background: var(--steel); border: 1px solid var(--light-gray); padding: 1.2rem; animation: pulse 1.5s ease-in-out infinite; }
+  .bot-skel-line { background: var(--light-gray); border-radius: 2px; margin-bottom: 0.6rem; }
+
+  .bot-img-area {
+    margin: 0 1.2rem 0.8rem;
+    border: 1.5px dashed var(--light-gray);
+    border-radius: 4px;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .bot-img-area:hover { border-color: var(--accent); background: rgba(204,34,0,0.04); }
+  .bot-img-area.has-image { border-style: solid; border-color: rgba(204,34,0,0.4); min-height: 160px; }
+  .bot-img-area img { width: 100%; max-height: 200px; object-fit: cover; display: block; border-radius: 3px; }
+  .bot-img-placeholder { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; padding: 0.8rem; color: var(--gray); font-size: 0.72rem; letter-spacing: 1px; text-transform: uppercase; font-family: 'Barlow Condensed', sans-serif; }
+  .bot-img-placeholder span { font-size: 1.3rem; }
+  .bot-img-remove { position: absolute; top: 6px; right: 6px; background: rgba(0,0,0,0.7); border: none; color: white; width: 22px; height: 22px; border-radius: 50%; cursor: pointer; font-size: 0.75rem; display: flex; align-items: center; justify-content: center; z-index: 2; }
+  .bot-img-remove:hover { background: var(--accent); }
+
+  .bot-empty { grid-column: 1/-1; text-align: center; padding: 5rem 2rem; color: var(--gray); }
+  .bot-empty-icon { font-size: 3.5rem; margin-bottom: 1rem; opacity: 0.4; }
+  .bot-empty h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.5rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem; color: var(--white); opacity: 0.5; }
+  .bot-empty p { font-size: 0.9rem; opacity: 0.6; }
+
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+  #admin-login-box input[type="password"] {
+    width: 100%;
+    background: var(--black);
+    border: 1px solid var(--light-gray);
+    color: var(--white);
+    padding: 0.8rem 1rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    outline: none;
+    margin: 1.2rem 0;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  #admin-login-box input[type="password"]:focus { border-color: var(--accent); }
+  #admin-login-box input[type="password"]::placeholder { letter-spacing: 1px; color: var(--gray); }
+
+  @media (max-width: 768px) {
+    .bot-controls { grid-template-columns: 1fr; }
+    .bot-stats-bar { grid-template-columns: repeat(3,1fr); }
+    .bot-posts-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<!-- PASSWORD OVERLAY -->
+<div id="admin-overlay">
+  <div id="admin-login-box">
+    <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.3rem;letter-spacing:3px;text-transform:uppercase;color:var(--white);">🔐 Admin <span style="color:var(--accent);">Access</span></div>
+    <p style="color:var(--gray);font-size:0.85rem;margin-top:0.5rem;">Enter your admin password to continue</p>
+    <input type="password" id="admin-pw-input" placeholder="Password" onkeydown="if(event.key==='Enter')checkAdminPw()">
+    <p id="admin-pw-error" style="color:#e74c3c;font-size:0.8rem;display:none;margin-bottom:0.8rem;">Incorrect password. Try again.</p>
+    <button onclick="checkAdminPw()" class="btn-primary" style="width:100%;cursor:pointer;font-size:0.9rem;padding:0.8rem;">Unlock →</button>
+    <button onclick="closeAdmin()" style="background:transparent;border:none;color:var(--gray);font-size:0.8rem;cursor:pointer;margin-top:0.8rem;width:100%;">Cancel</button>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="admin-panel">
+  <div class="admin-topbar">
+    <div class="admin-logo">TSI <span>Admin</span> · Social Media Bot</div>
+    <button class="admin-close-btn" onclick="closeAdminPanel()">✕ Close</button>
+  </div>
+  <div class="admin-body">
+    <div class="admin-title">Post <span>Generator</span></div>
+    <p class="admin-sub">AI-powered social posts for Facebook, Instagram & LinkedIn — tailored for TSI</p>
+
+    <!-- API KEY -->
+    <div style="background:var(--steel);border:1px solid rgba(204,34,0,0.3);padding:1rem 1.5rem;margin-bottom:1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+      <div style="flex:1;min-width:200px;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:0.4rem;">🔑 Anthropic API Key</div>
+        <div style="display:flex;gap:0.5rem;align-items:center;">
+          <input type="password" id="bot-api-key" placeholder="sk-ant-api03-..." style="flex:1;background:var(--black);border:1px solid var(--light-gray);color:var(--white);padding:0.6rem 1rem;font-family:'Barlow',sans-serif;font-size:0.9rem;outline:none;" onfocus="this.style.borderColor='#cc2200'" onblur="this.style.borderColor='#2a2d33'">
+          <button onclick="saveApiKey()" style="background:var(--accent);border:none;color:var(--black);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:0.8rem;letter-spacing:1px;padding:0.6rem 1.1rem;cursor:pointer;white-space:nowrap;">SAVE</button>
+          <button onclick="clearApiKey()" style="background:transparent;border:1px solid var(--light-gray);color:var(--gray);font-family:'Barlow Condensed',sans-serif;font-size:0.8rem;letter-spacing:1px;padding:0.6rem 0.8rem;cursor:pointer;">✕</button>
+        </div>
+        <div id="api-key-status" style="font-size:0.75rem;margin-top:0.5rem;color:var(--gray);"></div>
+      </div>
+      <div style="font-size:0.78rem;color:var(--gray);max-width:240px;line-height:1.5;">Key is saved in your browser only. Get yours at <a href="https://console.anthropic.com" target="_blank" style="color:var(--accent);">console.anthropic.com</a></div>
+    </div>
+
+    <!-- STATS -->
+    <div class="bot-stats-bar">
+      <div class="bot-stat-item"><div class="bot-stat-num" id="bstat-total">0</div><div class="bot-stat-lbl">Posts Generated</div></div>
+      <div class="bot-stat-item"><div class="bot-stat-num" id="bstat-fb" style="color:#1877f2;">0</div><div class="bot-stat-lbl">Facebook</div></div>
+      <div class="bot-stat-item"><div class="bot-stat-num" id="bstat-ig" style="color:#e1306c;">0</div><div class="bot-stat-lbl">Instagram</div></div>
+      <div class="bot-stat-item"><div class="bot-stat-num" id="bstat-li" style="color:#0a66c2;">0</div><div class="bot-stat-lbl">LinkedIn</div></div>
+      <div class="bot-stat-item"><div class="bot-stat-num" id="bstat-gb" style="color:#34a853;">0</div><div class="bot-stat-lbl">Google Biz</div></div>
+    </div>
+
+    <!-- CONTROLS -->
+    <div class="bot-controls">
+      <div class="bot-control-group">
+        <label>Platforms</label>
+        <div class="bot-plat-btns">
+          <button class="bot-plat-btn active-fb" data-plat="facebook" onclick="botTogglePlatform(this)">📘 Facebook</button>
+          <button class="bot-plat-btn active-ig" data-plat="instagram" onclick="botTogglePlatform(this)">📸 Instagram</button>
+          <button class="bot-plat-btn active-li" data-plat="linkedin" onclick="botTogglePlatform(this)">💼 LinkedIn</button>
+          <button class="bot-plat-btn active-gb" data-plat="google" onclick="botTogglePlatform(this)">🏢 Google Biz</button>
+        </div>
+      </div>
+      <div class="bot-control-group">
+        <label>Content Focus</label>
+        <select class="bot-select" id="bot-content-type">
+          <option value="mix">All Content Types</option>
+          <option value="promo">Tire Deals & Promotions</option>
+          <option value="tip">Fleet Tips & Advice</option>
+          <option value="brand">Brand Spotlights</option>
+        </select>
+      </div>
+      <div class="bot-control-group">
+        <label>Tone</label>
+        <select class="bot-select" id="bot-tone">
+          <option value="professional">Professional</option>
+          <option value="friendly">Friendly & Casual</option>
+          <option value="urgent">Urgent & Promotional</option>
+        </select>
+      </div>
+      <div class="bot-control-group">
+        <label>Action</label>
+        <button class="bot-gen-btn" onclick="botGeneratePosts()" id="bot-gen-btn">⚡ Generate Post</button>
+      </div>
+    </div>
+
+    <!-- WEEK NAV -->
+    <div class="bot-week-header">
+      <div class="bot-week-label">📅 Weekly Post Schedule</div>
+      <div class="bot-week-nav">
+        <button onclick="botChangeWeek(-1)">‹</button>
+        <span id="bot-week-display">—</span>
+        <button onclick="botChangeWeek(1)">›</button>
+      </div>
+    </div>
+
+    <!-- POSTS -->
+    <div class="bot-posts-grid" id="bot-posts-grid">
+      <div class="bot-empty">
+        <div class="bot-empty-icon">🚛</div>
+        <h3>No Posts Yet</h3>
+        <p>Select platforms and click "Generate Post" to create your content</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ── ADMIN AUTH ──
+  var ADMIN_PASSWORD = 'TSI2025';
+
+  function openAdminPrompt() {
+    document.getElementById('admin-overlay').classList.add('show');
+    setTimeout(function() { document.getElementById('admin-pw-input').focus(); }, 200);
+  }
+
+  function checkAdminPw() {
+    var pw = document.getElementById('admin-pw-input').value;
+    var err = document.getElementById('admin-pw-error');
+    if (pw === ADMIN_PASSWORD) {
+      document.getElementById('admin-overlay').classList.remove('show');
+      document.getElementById('admin-pw-input').value = '';
+      err.style.display = 'none';
+      document.getElementById('admin-panel').classList.add('show');
+      document.body.style.overflow = 'hidden';
+      botUpdateWeekDisplay();
+      loadApiKey();
+    } else {
+      err.style.display = 'block';
+      document.getElementById('admin-pw-input').value = '';
+      document.getElementById('admin-pw-input').focus();
+    }
+  }
+
+  function closeAdmin() {
+    document.getElementById('admin-overlay').classList.remove('show');
+    document.getElementById('admin-pw-input').value = '';
+    document.getElementById('admin-pw-error').style.display = 'none';
+  }
+
+  function closeAdminPanel() {
+    document.getElementById('admin-panel').classList.remove('show');
+    document.body.style.overflow = '';
+  }
+
+  // ── API KEY MANAGEMENT ──
+  function saveApiKey() {
+    var key = document.getElementById('bot-api-key').value.trim();
+    if (!key || !key.startsWith('sk-ant')) {
+      document.getElementById('api-key-status').innerHTML = '<span style="color:#e74c3c;">⚠ Invalid key — must start with sk-ant</span>';
+      return;
+    }
+    localStorage.setItem('tsi_bot_api_key', key);
+    document.getElementById('bot-api-key').value = '';
+    document.getElementById('bot-api-key').placeholder = '✓ Key saved — enter a new one to update';
+    document.getElementById('api-key-status').innerHTML = '<span style="color:#2ecc71;">✓ API key saved to browser</span>';
+  }
+
+  function clearApiKey() {
+    localStorage.removeItem('tsi_bot_api_key');
+    document.getElementById('bot-api-key').value = '';
+    document.getElementById('bot-api-key').placeholder = 'sk-ant-api03-...';
+    document.getElementById('api-key-status').innerHTML = '<span style="color:#e67e22;">Key cleared</span>';
+  }
+
+  function loadApiKey() {
+    var saved = localStorage.getItem('tsi_bot_api_key');
+    if (saved) {
+      document.getElementById('bot-api-key').placeholder = '✓ Key saved — enter a new one to update';
+      document.getElementById('api-key-status').innerHTML = '<span style="color:#2ecc71;">✓ API key loaded from browser</span>';
+    }
+  }
+
+  // ── BOT LOGIC ──
+  var botActivePlatforms = { facebook: true, instagram: true, linkedin: true, google: true };
+  var botWeekOffset = 0;
+  var botAllPosts = [];
+  var botStats = { total: 0, facebook: 0, instagram: 0, linkedin: 0, google: 0 };
+
+  var BOT_PLAT_COLORS = { facebook: '#1877f2', instagram: '#e1306c', linkedin: '#0a66c2', google: '#34a853' };
+  var BOT_PLAT_LABELS = { facebook: '📘 Facebook', instagram: '📸 Instagram', linkedin: '💼 LinkedIn', google: '🏢 Google Business' };
+
+  function botTogglePlatform(btn) {
+    var plat = btn.dataset.plat;
+    botActivePlatforms[plat] = !botActivePlatforms[plat];
+    var shortMap = {facebook:'fb', instagram:'ig', linkedin:'li', google:'gb'}; btn.className = 'bot-plat-btn' + (botActivePlatforms[plat] ? ' active-' + (shortMap[plat]||plat) : '');
+  }
+
+  function botGetWeekDates(offset) {
+    var now = new Date();
+    var day = now.getDay();
+    var diff = now.getDate() - day + (day===0?-6:1) + (offset*7);
+    var monday = new Date(new Date().setDate(diff));
+    var sunday = new Date(monday); sunday.setDate(monday.getDate()+6);
+    return {
+      label: monday.toLocaleDateString('en-US',{month:'short',day:'numeric'}) + ' – ' +
+             sunday.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})
+    };
+  }
+
+  function botChangeWeek(dir) { botWeekOffset += dir; botUpdateWeekDisplay(); }
+
+  function botUpdateWeekDisplay() {
+    document.getElementById('bot-week-display').textContent = botGetWeekDates(botWeekOffset).label;
+  }
+
+  function botUpdateStats() {
+    document.getElementById('bstat-total').textContent = botStats.total;
+    document.getElementById('bstat-fb').textContent = botStats.facebook;
+    document.getElementById('bstat-ig').textContent = botStats.instagram;
+    document.getElementById('bstat-li').textContent = botStats.linkedin;
+    document.getElementById('bstat-gb').textContent = botStats.google;
+  }
+
+  function botShowSkeletons(count) {
+    var grid = document.getElementById('bot-posts-grid');
+    grid.innerHTML = '';
+    for (var i = 0; i < count; i++) {
+      grid.innerHTML += `<div class="bot-skeleton" style="animation-delay:${i*0.05}s">
+        <div class="bot-skel-line" style="height:14px;width:40%;margin-bottom:1rem;"></div>
+        <div class="bot-skel-line" style="height:10px;width:100%;"></div>
+        <div class="bot-skel-line" style="height:10px;width:88%;"></div>
+        <div class="bot-skel-line" style="height:10px;width:74%;"></div>
+        <div class="bot-skel-line" style="height:10px;width:50%;margin-top:1rem;"></div>
+      </div>`;
+    }
+  }
+
+  async function botGeneratePosts() {
+    var selected = Object.keys(botActivePlatforms).filter(function(p){ return botActivePlatforms[p]; });
+    if (!selected.length) { alert('Please select at least one platform.'); return; }
+
+    var btn = document.getElementById('bot-gen-btn');
+    btn.disabled = true; btn.textContent = '⏳ Generating...';
+    botUpdateWeekDisplay();
+
+    var contentType = document.getElementById('bot-content-type').value;
+    var tone = document.getElementById('bot-tone').value;
+    var week = botGetWeekDates(botWeekOffset);
+    var postDays = ['Monday','Wednesday','Friday'];
+    var assignments = selected.map(function(plat, i){ return { platform: plat, day: postDays[i % postDays.length] }; });
+    if (selected.length < 3) assignments.push({ platform: selected[0], day: 'Thursday' });
+
+    botShowSkeletons(assignments.length);
+
+    var types = { mix:['promo','tip','brand'], promo:['promo'], tip:['tip'], brand:['brand'] }[contentType];
+
+    var prompt = `You are a social media manager for Tire Sales International (TSI), a commercial wholesale truck tire distributor in Houston, TX. They sell: Firestone, BF Goodrich, Yokohama, Falken (premium) and Avantec, Double Coin, Xmplar (imported). Phone: (713) 675-3800. Gulf Coast region.
+
+Generate ${assignments.length} social media posts for the week of ${week.label}.
+Tone: ${tone}
+Content: ${contentType==='mix'?'mix of promos, fleet tips, brand spotlights':contentType}
+
+Assignments:
+${assignments.map(function(a,i){ return (i+1)+'. Platform: '+a.platform+', Day: '+a.day+', Type: '+types[i%types.length]; }).join('\n')}
+
+For google platform posts: keep under 1500 chars, focus on local SEO value (mention Houston, TX), include a call-to-action. Google Business posts do not use hashtags.
+Respond ONLY with valid JSON array. No markdown. No explanation:
+[{"platform":"facebook","day":"Monday","type":"promo","post":"text here","hashtags":["#TSI","#TruckTires"]}]`;
+
+    var apiKey = (localStorage.getItem('tsi_bot_api_key') || '').trim();
+    if (!apiKey) { alert('Please enter and save your Anthropic API key first.'); btn.disabled=false; btn.textContent='⚡ Generate Post'; return; }
+    try {
+      var res = await fetch('https://api.anthropic.com/v1/messages', {
+        method:'POST', headers:{
+          'Content-Type':'application/json',
+          'anthropic-version':'2023-06-01',
+          'anthropic-dangerous-direct-browser-access':'true',
+          'x-api-key': apiKey
+        },
+        body: JSON.stringify({ model:'claude-sonnet-4-20250514', max_tokens:1000, messages:[{role:'user',content:prompt}] })
+      });
+      var data = await res.json();
+      if (data.error) throw new Error(data.error.message);
+      var raw = data.content[0].text.trim().replace(/```json|```/g,'').trim();
+      var posts = JSON.parse(raw);
+      botAllPosts = posts;
+      botRenderPosts(posts);
+      posts.forEach(function(p){ botStats.total++; if(botStats[p.platform]!==undefined) botStats[p.platform]++; });
+      botUpdateStats();
+    } catch(err) {
+      document.getElementById('bot-posts-grid').innerHTML = '<div class="bot-empty"><div class="bot-empty-icon">⚠️</div><h3>Failed</h3><p>' + (err.message || 'Please try again.') + '</p></div>';
+      console.error(err);
+    }
+    btn.disabled = false; btn.textContent = '⚡ Generate Post';
+  }
+
+  var BOT_PLAT_LINKS = {
+    facebook: 'https://www.facebook.com/profile.php?id=100063969077334',
+    instagram: 'https://www.instagram.com/',
+    linkedin: 'https://www.linkedin.com/in/tire-sales-international-usa-1667a391',
+    google: 'https://business.google.com/dashboard'
+  };
+
+  function botRenderPosts(posts) {
+    var grid = document.getElementById('bot-posts-grid');
+    if (!posts || !posts.length) { grid.innerHTML = '<div class="bot-empty"><div class="bot-empty-icon">🚛</div><h3>No Posts</h3></div>'; return; }
+    grid.innerHTML = posts.map(function(post, idx) {
+      var color = BOT_PLAT_COLORS[post.platform] || '#cc2200';
+      var label = BOT_PLAT_LABELS[post.platform] || post.platform;
+      var bc = post.type==='promo'?'bot-badge-promo':post.type==='tip'?'bot-badge-tip':'bot-badge-brand';
+      var bl = post.type==='promo'?'🔥 Promo':post.type==='tip'?'💡 Tip':'⭐ Brand';
+      var tags = (post.hashtags||[]).join(' ');
+      var platLink = BOT_PLAT_LINKS[post.platform] || '#';
+      return `<div class="bot-post-card" id="bcard-${idx}" style="animation-delay:${idx*0.08}s">
+        <div class="bot-card-header">
+          <div class="bot-platform"><div class="bot-plat-dot" style="background:${color};"></div><span style="color:${color};">${label}</span></div>
+          <span class="bot-type-badge ${bc}">${bl}</span>
+        </div>
+        <div style="padding:0.5rem 1.2rem 0;font-size:0.7rem;color:var(--gray);letter-spacing:1px;text-transform:uppercase;">📅 ${post.day||''}</div>
+        <div class="bot-post-body">
+          <div class="bot-post-text" id="btext-${idx}">${botEscape(post.post||'')}</div>
+          <div class="bot-post-hashtags" id="btags-${idx}">${botEscape(tags)}</div>
+        </div>
+        <input type="file" id="bimg-input-${idx}" accept="image/*" style="display:none;" onchange="botImageSelected(${idx}, this)">
+        <div class="bot-img-area" id="bimg-area-${idx}" onclick="document.getElementById('bimg-input-'+${idx}).click()" title="Add photo">
+          <div class="bot-img-placeholder"><span>📷</span>Add Photo</div>
+        </div>
+        <div class="bot-post-footer">
+          <button class="bot-action-btn" onclick="botCopyAndOpen(${idx}, '${platLink}', this)">🚀 Copy & Post</button>
+          <button class="bot-action-btn" onclick="botEdit(${idx})">✏️ Edit</button>
+          <button class="bot-regen-btn" onclick="botRegen(${idx})" title="Regenerate">🔄</button>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function botImageSelected(idx, input) {
+    if (!input.files || !input.files[0]) return;
+    var file = input.files[0];
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      var area = document.getElementById('bimg-area-'+idx);
+      area.classList.add('has-image');
+      area.innerHTML = '<img src="'+e.target.result+'" alt="Post image"><button class="bot-img-remove" onclick="botRemoveImage('+idx+', event)" title="Remove">✕</button>';
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function botRemoveImage(idx, e) {
+    e.stopPropagation();
+    var area = document.getElementById('bimg-area-'+idx);
+    area.classList.remove('has-image');
+    area.innerHTML = '<div class="bot-img-placeholder"><span>📷</span>Add Photo</div>';
+    area.onclick = function(){ document.getElementById('bimg-input-'+idx).click(); };
+    document.getElementById('bimg-input-'+idx).value = '';
+  }
+
+  function botEscape(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+  function botCopyAndOpen(idx, url, btn) {
+    var text = document.getElementById('btext-'+idx).innerText;
+    var tags = document.getElementById('btags-'+idx).innerText;
+    navigator.clipboard.writeText(text+'\n\n'+tags).then(function(){
+      btn.textContent='✓ Copied! Opening...';
+      btn.classList.add('copied');
+      setTimeout(function(){
+        window.open(url, '_blank');
+        btn.textContent='🚀 Copy & Post';
+        btn.classList.remove('copied');
+      }, 800);
+    });
+  }
+
+  function botCopy(idx, btn) {
+    var text = document.getElementById('btext-'+idx).innerText;
+    var tags = document.getElementById('btags-'+idx).innerText;
+    navigator.clipboard.writeText(text+'\n\n'+tags).then(function(){
+      btn.textContent='✓ Copied!'; btn.classList.add('copied');
+      setTimeout(function(){ btn.textContent='📋 Copy'; btn.classList.remove('copied'); }, 2000);
+    });
+  }
+
+  function botEdit(idx) {
+    var t = document.getElementById('btext-'+idx);
+    var g = document.getElementById('btags-'+idx);
+    var editing = t.contentEditable==='true';
+    t.contentEditable = g.contentEditable = editing?'false':'true';
+    t.style.outline = editing?'':'1px solid rgba(204,34,0,0.5)';
+    t.style.padding = g.style.padding = editing?'':'4px';
+    g.style.outline = editing?'':'1px solid rgba(204,34,0,0.3)';
+    var editBtn = document.getElementById('bcard-'+idx).querySelectorAll('.bot-action-btn')[1];
+    editBtn.textContent = editing?'✏️ Edit':'💾 Save';
+    if (!editing) t.focus();
+  }
+
+  async function botRegen(idx) {
+    var post = botAllPosts[idx]; if (!post) return;
+    var textEl = document.getElementById('btext-'+idx);
+    var tagsEl = document.getElementById('btags-'+idx);
+    var regenBtn = document.getElementById('bcard-'+idx).querySelector('.bot-regen-btn');
+    regenBtn.textContent='⏳'; regenBtn.disabled=true; textEl.style.opacity='0.3';
+    var tone = document.getElementById('bot-tone').value;
+    var prompt = `You are TSI's social media manager. Write ONE fresh ${post.platform} post for ${post.day}. Type: ${post.type}. Tone: ${tone}. Different from: "${post.post}". Respond ONLY with JSON (no markdown): {"post":"text","hashtags":["#tag1","#tag2","#tag3","#tag4"]}`;
+    var apiKey = (localStorage.getItem('tsi_bot_api_key') || '').trim();
+    if (!apiKey) { regenBtn.textContent='🔄'; regenBtn.disabled=false; textEl.style.opacity='1'; alert('Please enter and save your Anthropic API key first.'); return; }
+    try {
+      var res = await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json','anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true','x-api-key':apiKey},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:500,messages:[{role:'user',content:prompt}]})});
+      var data = await res.json();
+      if (data.error) throw new Error(data.error.message);
+      var result = JSON.parse(data.con
